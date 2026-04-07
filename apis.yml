@@ -1,15 +1,12 @@
 name: Tax Reporting Templates
-description: Pre-built templates and frameworks for generating tax reports, compliance
-  documents, and financial summaries required for tax filing and regulatory purposes.
-  It helps organizations meet regulatory requirements and demonstrate accountability
-  to stakeholders.
-url: null
+description: Pre-built templates and frameworks for generating tax reports, compliance documents, and financial summaries required for tax filing and regulatory purposes. It helps organizations meet regulatory requirements and demonstrate accountability to stakeholders.
+url:
 tags:
-- Tax
-- Reporting
-- Compliance
-- Templates
-- Documentation
+  - Compliance
+  - Documentation
+  - Reporting
+  - Tax
+  - Templates
 created: '2025'
 modified: '2026-03-16'
 apis: []
