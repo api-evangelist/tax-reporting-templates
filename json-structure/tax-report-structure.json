@@ -1,0 +1,50 @@
+{
+  "name": "Tax Report",
+  "description": "Structure documentation for a standardized tax report document",
+  "fields": [
+    {"name": "report_type", "type": "string", "required": true, "description": "IRS form type: 1040, 1120, 1065, W-2, 1099-NEC, etc."},
+    {"name": "tax_year", "type": "integer", "required": true, "description": "Tax year covered by the report"},
+    {"name": "period", "type": "string", "required": false, "description": "Reporting period: annual, quarterly, or monthly"},
+    {"name": "filing_status", "type": "string", "required": false, "description": "Status: draft, prepared, submitted, accepted, rejected, amended"},
+    {"name": "filer", "type": "Filer", "required": true, "description": "Entity or individual filing the report"},
+    {"name": "income", "type": "IncomeSection", "required": false, "description": "Income sources for the tax period"},
+    {"name": "deductions", "type": "DeductionSection", "required": false, "description": "Deductions claimed"},
+    {"name": "taxes", "type": "TaxSection", "required": false, "description": "Tax liability calculations"},
+    {"name": "payments", "type": "PaymentSection", "required": false, "description": "Payments applied toward liability"},
+    {"name": "metadata", "type": "ReportMetadata", "required": false, "description": "Filing metadata and audit trail"}
+  ],
+  "nested": {
+    "Filer": {
+      "fields": [
+        {"name": "name", "type": "string", "description": "Legal name"},
+        {"name": "tin_type", "type": "string", "description": "SSN, EIN, or ITIN"},
+        {"name": "tin", "type": "string", "description": "Taxpayer identification number"},
+        {"name": "address", "type": "Address", "description": "Mailing address"},
+        {"name": "filing_type", "type": "string", "description": "individual, joint, corporation, partnership, etc."}
+      ]
+    },
+    "IncomeSection": {
+      "fields": [
+        {"name": "wages", "type": "number", "description": "W-2 wages and salaries"},
+        {"name": "interest", "type": "number", "description": "Taxable interest"},
+        {"name": "dividends", "type": "number", "description": "Ordinary dividends"},
+        {"name": "capital_gains", "type": "number", "description": "Net capital gains or losses"},
+        {"name": "business_income", "type": "number", "description": "Schedule C income"},
+        {"name": "rental_income", "type": "number", "description": "Rental income"},
+        {"name": "other_income", "type": "number", "description": "Other taxable income"},
+        {"name": "total_income", "type": "number", "description": "Total gross income"}
+      ]
+    },
+    "TaxSection": {
+      "fields": [
+        {"name": "taxable_income", "type": "number", "description": "AGI minus deductions"},
+        {"name": "regular_tax", "type": "number", "description": "Regular income tax"},
+        {"name": "amt", "type": "number", "description": "Alternative minimum tax"},
+        {"name": "self_employment_tax", "type": "number", "description": "SE tax"},
+        {"name": "credits", "type": "number", "description": "Total tax credits"},
+        {"name": "total_tax", "type": "number", "description": "Net tax liability"},
+        {"name": "effective_rate", "type": "number", "description": "Effective rate 0-1"}
+      ]
+    }
+  }
+}

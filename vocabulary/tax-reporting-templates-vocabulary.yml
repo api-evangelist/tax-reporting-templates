@@ -1,0 +1,93 @@
+name: Tax Reporting Templates Vocabulary
+description: Domain vocabulary for tax reporting, compliance documents, and financial summaries required for US federal and state tax filing.
+url: https://www.irs.gov/
+version: "1.0"
+created: "2026-05-03"
+modified: "2026-05-03"
+tags:
+  - Compliance
+  - Finance
+  - Reporting
+  - Tax
+  - Templates
+terms:
+  - term: Modernized e-File (MeF)
+    definition: "The IRS's primary electronic filing system that accepts individual, business, and employment tax returns via XML-formatted submissions. Defined by IRS schemas and business rules published each tax year."
+    type: system
+    domain: Federal Tax
+  - term: TCIN
+    definition: "Taxpayer Identification Number. An umbrella term covering SSN (Social Security Number), EIN (Employer Identification Number), and ITIN (Individual Taxpayer Identification Number)."
+    type: identifier
+    domain: Identification
+  - term: SSN
+    definition: "Social Security Number. A 9-digit number assigned by the Social Security Administration used as the primary TIN for individual taxpayers."
+    type: identifier
+    domain: Identification
+  - term: EIN
+    definition: "Employer Identification Number. A 9-digit number assigned by the IRS to businesses, trusts, estates, and other entities for tax filing purposes."
+    type: identifier
+    domain: Identification
+  - term: ITIN
+    definition: "Individual Taxpayer Identification Number. Issued by the IRS to individuals who are required to file a US tax return but are not eligible for an SSN."
+    type: identifier
+    domain: Identification
+  - term: PTIN
+    definition: "Preparer Tax Identification Number. Issued by the IRS to tax return preparers who are compensated for preparing federal tax returns."
+    type: identifier
+    domain: Identification
+  - term: Adjusted Gross Income (AGI)
+    definition: "Gross income minus specific deductions (adjustments). The foundation for calculating taxable income. Appears on line 11 of Form 1040."
+    type: financial-concept
+    domain: Income
+  - term: Taxable Income
+    definition: "AGI minus the standard or itemized deduction and any qualified business income deduction. The amount on which the regular income tax is calculated."
+    type: financial-concept
+    domain: Income
+  - term: Standard Deduction
+    definition: "A fixed dollar amount that reduces taxable income. The amount varies by filing status and is adjusted annually for inflation. For 2025, $14,600 for single filers."
+    type: deduction
+    domain: Deductions
+  - term: Itemized Deductions
+    definition: "Specific deductions claimed on Schedule A including mortgage interest, state and local taxes (capped at $10,000), charitable contributions, and medical expenses exceeding 7.5% of AGI."
+    type: deduction
+    domain: Deductions
+  - term: Alternative Minimum Tax (AMT)
+    definition: "A parallel tax system that ensures high-income taxpayers pay a minimum amount of tax by disallowing certain deductions and credits. Calculated on Form 6251."
+    type: tax
+    domain: Tax Liability
+  - term: Qualified Business Income (QBI) Deduction
+    definition: "A deduction of up to 20% of qualified business income for owners of pass-through entities (S corps, partnerships, sole proprietorships). Authorized by Section 199A."
+    type: deduction
+    domain: Deductions
+  - term: W-2
+    definition: "IRS Form W-2 (Wage and Tax Statement). Employers must provide to each employee and file with the SSA annually, reporting wages paid and taxes withheld."
+    type: form
+    domain: Employment Tax
+  - term: 1099-NEC
+    definition: "IRS Form 1099-NEC (Nonemployee Compensation). Filed by businesses that pay $600 or more in a year to non-employees (contractors, freelancers)."
+    type: form
+    domain: Information Reporting
+  - term: 1099-MISC
+    definition: "IRS Form 1099-MISC (Miscellaneous Information). Used to report miscellaneous payments including rent, prizes, attorney fees, and other income types."
+    type: form
+    domain: Information Reporting
+  - term: Form 941
+    definition: "IRS Form 941 (Employer's Quarterly Federal Tax Return). Filed quarterly by employers to report income taxes, Social Security, and Medicare taxes withheld."
+    type: form
+    domain: Employment Tax
+  - term: Estimated Tax Payments
+    definition: "Quarterly payments made to the IRS by self-employed individuals and others with income not subject to withholding, to avoid underpayment penalties."
+    type: financial-concept
+    domain: Payments
+  - term: Effective Tax Rate
+    definition: "The actual percentage of income paid in taxes, calculated as total tax liability divided by total taxable income. Differs from the marginal tax rate."
+    type: financial-concept
+    domain: Tax Liability
+  - term: Filing Status
+    definition: "Tax filing category that determines the applicable tax rates and standard deduction. Options: Single, Married Filing Jointly, Married Filing Separately, Head of Household, Qualifying Surviving Spouse."
+    type: classification
+    domain: Filing
+  - term: Nexus
+    definition: "In sales tax, a sufficient connection between a business and a state that obligates the business to collect and remit that state's sales tax. Can be physical or economic."
+    type: legal-concept
+    domain: Sales Tax

@@ -1,0 +1,58 @@
+{
+  "report_type": "1040",
+  "tax_year": 2025,
+  "period": "annual",
+  "filing_status": "prepared",
+  "filer": {
+    "name": "Jane Smith",
+    "tin_type": "SSN",
+    "tin": "123-45-6789",
+    "filing_type": "individual",
+    "address": {
+      "street": "123 Main St",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78701",
+      "country": "US"
+    }
+  },
+  "income": {
+    "wages": 85000.00,
+    "interest": 450.00,
+    "dividends": 1200.00,
+    "capital_gains": 3500.00,
+    "business_income": 0,
+    "rental_income": 0,
+    "other_income": 500.00,
+    "total_income": 90650.00
+  },
+  "deductions": {
+    "standard_deduction": 14600.00,
+    "itemized_deductions": 0,
+    "qualified_business_income": 0,
+    "total_deductions": 14600.00
+  },
+  "taxes": {
+    "taxable_income": 76050.00,
+    "regular_tax": 12892.00,
+    "amt": 0,
+    "self_employment_tax": 0,
+    "credits": 2000.00,
+    "total_tax": 10892.00,
+    "effective_rate": 0.1202
+  },
+  "payments": {
+    "withholding": 11500.00,
+    "estimated_payments": 0,
+    "total_payments": 11500.00,
+    "refund_due": 608.00,
+    "balance_due": 0
+  },
+  "metadata": {
+    "created_at": "2026-02-10T09:00:00Z",
+    "modified_at": "2026-03-15T14:30:00Z",
+    "preparer_name": "John Doe CPA",
+    "preparer_tin": "P00123456",
+    "software": "TaxSoftware Pro 2026"
+  }
+}
