@@ -95,7 +95,7 @@ common:
     url: json-schema/tax-report-schema.json
   - type: JSON Structure
     url: json-structure/tax-report-structure.json
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/tax-reporting-templates-context.jsonld
   - type: Vocabulary
     url: vocabulary/tax-reporting-templates-vocabulary.yml
