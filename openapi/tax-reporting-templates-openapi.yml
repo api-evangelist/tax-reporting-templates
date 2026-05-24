@@ -1,0 +1,48 @@
+openapi: 3.1.0
+info:
+  title: Tax Reporting Templates - TaxJar Sales Tax API
+  version: "2.0.0"
+  description: |
+    REST API for real-time sales tax calculations and category lookup,
+    documented under the Tax Reporting Templates index. Authentication
+    uses a bearer API key in the Authorization header.
+  contact:
+    name: TaxJar
+    url: https://developers.taxjar.com/api/reference/
+servers:
+  - url: https://api.taxjar.com/v2
+    description: Production
+  - url: https://api.sandbox.taxjar.com/v2
+    description: Sandbox
+security:
+  - bearerAuth: []
+paths:
+  /categories:
+    get:
+      summary: List tax categories
+      description: Lists all tax categories supported by TaxJar.
+      operationId: listCategories
+      tags:
+        - Categories
+      responses:
+        "200":
+          description: Categories list
+  /taxes:
+    post:
+      summary: Calculate sales tax
+      description: Calculate sales tax for an order.
+      operationId: calculateTax
+      tags:
+        - Taxes
+      responses:
+        "200":
+          description: Tax calculation result
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+tags:
+  - name: Categories
+  - name: Taxes
