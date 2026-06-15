@@ -1,0 +1,188 @@
+{
+  "item": [
+    {
+      "id": "e3f779db-91b3-41d1-a551-2864621b61ae",
+      "name": "Categories",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7284b239-3ab1-49c8-aff7-146fd0901c93",
+          "name": "List tax categories",
+          "request": {
+            "name": "List tax categories",
+            "description": {
+              "content": "Lists all tax categories supported by TaxJar.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "categories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c491f338-b73e-463c-99c1-d8bb3b4a992e",
+              "name": "Categories list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "dd571b61-0d1b-447b-9ad7-85948ad63a4f",
+      "name": "Taxes",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b1b5fe4e-4fad-45cf-a52e-f7346cdf3cb1",
+          "name": "Calculate sales tax",
+          "request": {
+            "name": "Calculate sales tax",
+            "description": {
+              "content": "Calculate sales tax for an order.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "taxes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e1344049-5033-4dcc-b76a-d64416748107",
+              "name": "Tax calculation result",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "taxes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.taxjar.com/v2",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "d050052d-0fdb-485c-b1cc-10882479c8b3",
+    "name": "Tax Reporting Templates - TaxJar Sales Tax API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for real-time sales tax calculations and category lookup,\ndocumented under the Tax Reporting Templates index. Authentication\nuses a bearer API key in the Authorization header.\n\n\nContact Support:\n Name: TaxJar",
+      "type": "text/plain"
+    }
+  }
+}
