@@ -24,7 +24,7 @@ apis:
       - Federal Tax
       - IRS
       - Tax
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://la1.www4.irs.gov/mef
     humanURL: https://www.irs.gov/tax-professionals/e-file-providers-partners/modernized-e-file
     properties:
@@ -45,7 +45,7 @@ apis:
       - Compliance
       - Sales Tax
       - Tax
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.taxjar.com/v2
     humanURL: https://developers.taxjar.com/
     properties:
@@ -62,7 +62,7 @@ apis:
       - Global Tax
       - Sales Tax
       - Tax
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://rest.avatax.com/api/v2
     humanURL: https://developer.avalara.com/
     properties:
@@ -80,7 +80,7 @@ apis:
       - Payroll
       - Tax
       - W-2
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.irs.gov/businesses/small-businesses-self-employed/employment-taxes
     properties:
       - url: https://www.irs.gov/businesses/small-businesses-self-employed/employment-taxes
