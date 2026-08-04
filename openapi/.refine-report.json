@@ -1,0 +1,16 @@
+{
+  "provider": "tax-reporting-templates",
+  "sources": [
+    "tax-reporting-templates-categories-api-openapi.yml",
+    "tax-reporting-templates-taxes-api-openapi.yml"
+  ],
+  "outputs": [
+    "tax-reporting-templates-categories-api-openapi.yml",
+    "tax-reporting-templates-taxes-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
