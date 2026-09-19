@@ -130,6 +130,8 @@ apis:
   humanURL: https://www.irs.gov/tax-professionals/e-file-providers-partners/modernized-e-file
   baseURL: https://la1.www4.irs.gov/mef
   tags:
+  - Tax
+  tags_raw:
   - Taxes
   properties:
   - type: OpenAPI
