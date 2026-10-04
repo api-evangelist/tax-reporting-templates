@@ -1,0 +1,36 @@
+slug: tax-reporting-templates
+provider: Tax Reporting Templates
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Taxes
+  spec_file: tax-reporting-templates-taxes-api-openapi.yml
+  capability_id: BC-220.20
+  capability_id_l1: BC-220
+  capability_name: Indirect Tax Management
+  confidence: 0.82
+  evidence: POST /taxes  calculateTax  Calculate sales tax — "REST API for real-time sales tax calculations
+    and category lookup"
+  reason: Operation computes sales tax on transactions, which is indirect tax (sales/VAT) determination
+    and calculation under Tax Management.
+- tag: Categories
+  spec_file: tax-reporting-templates-categories-api-openapi.yml
+  capability_id: BC-220.20
+  capability_id_l1: BC-220
+  capability_name: Indirect Tax Management
+  confidence: 0.8
+  evidence: REST API for real-time sales tax calculations and category lookup; GET /categories listCategories
+    List tax categories
+  reason: The TaxJar categories endpoint supplies product tax categories used for sales tax determination,
+    squarely indirect tax (VAT/GST/sales tax) management. Only one read operation, so slight ambiguity
+    about depth, but the domain is unambiguous.
