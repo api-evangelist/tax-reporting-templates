@@ -42,7 +42,7 @@ tags:
   - Tax
   - Templates
 created: '2025'
-modified: '2026-05-03'
+modified: '2026-10-06'
 apis:
 - aid: tax-reporting-templates:irs-mef-api
   name: IRS Modernized e-File (MeF) API
@@ -138,6 +138,8 @@ apis:
   - type: OpenAPI
     url: openapi/tax-reporting-templates-taxes-api-openapi.yml
 common:
+  - url: https://www.irs.gov/newsroom
+    type: Blog
   - type: CapabilityMap
     url: capabilities/tax-reporting-templates-capability-edges.yml
     name: Tax Reporting Templates Business Capability Map
