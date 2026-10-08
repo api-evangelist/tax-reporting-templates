@@ -138,6 +138,12 @@ apis:
   - type: OpenAPI
     url: openapi/tax-reporting-templates-taxes-api-openapi.yml
 common:
+  - type: Plans
+    url: plans/tax-reporting-templates-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/tax-reporting-templates-rate-limits.yml
+  - type: FinOps
+    url: finops/tax-reporting-templates-finops.yml
   - url: https://www.irs.gov/newsroom
     type: Blog
   - type: CapabilityMap
